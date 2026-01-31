@@ -1,7 +1,7 @@
 import { Award, GraduationCap, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import doctorImage from "@/assets/doctor-portrait.jpg";
+import doctorImage from "@/assets/doctor-portrait.jpeg";
 
 const HeroSection = () => {
   const stats = [

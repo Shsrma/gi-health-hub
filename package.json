@@ -1,7 +1,8 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "dr-harshal-mahesh-goel-portfolio",
+  "description": "Professional web portfolio for Dr. Harshal Mahesh Goel",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

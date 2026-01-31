@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
-import doctorImage from "@/assets/doctor-portrait.jpg";
+import doctorImage from "@/assets/doctor-portrait.jpeg";
 
 const Home = () => {
   return (
