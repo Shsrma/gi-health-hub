@@ -81,7 +81,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/60">
-            © {currentYear} Dr. Harshal Mahesh Goel. All rights reserved.
+            © {currentYear} Ankur Sharma. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-primary-foreground/60">
             <Link to="/book-consultation" className="hover:text-primary-foreground transition-colors">

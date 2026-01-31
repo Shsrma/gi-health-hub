@@ -26,7 +26,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Working Hours",
-      details: ["Mon - Fri: 9:00 AM - 5:00 PM", "Sat: 9:00 AM - 1:00 PM"],
+      details: ["Mon - Sat: 10:00 AM - 4:00 PM"],
     },
   ];
 
