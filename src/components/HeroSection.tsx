@@ -1,34 +1,33 @@
 import { Award, GraduationCap, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import doctorImage from "@/assets/doctor-portrait.jpg";
 
 const HeroSection = () => {
   const stats = [
-    { icon: GraduationCap, value: "3+", label: "Degrees" },
-    { icon: Award, value: "10+", label: "Years Experience" },
-    { icon: Stethoscope, value: "5000+", label: "Patients Treated" },
+    { icon: GraduationCap, value: "5+", label: "Years Experience" },
+    { icon: Stethoscope, value: "1000+", label: "Procedures" },
+    { icon: Award, value: "AIIMS", label: "Training" },
   ];
 
   return (
     <section className="relative min-h-screen pt-32 md:pt-40 pb-20 overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-medical-blue-light rounded-bl-[100px] -z-10" />
-      <div className="absolute top-40 right-10 w-72 h-72 bg-medical-teal/10 rounded-full blur-3xl -z-10" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary rounded-bl-[100px] -z-10" />
+      <div className="absolute top-40 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl -z-10" />
       
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="animate-fade-up">
-            <span className="inline-block px-4 py-2 bg-medical-blue-light text-primary font-medium rounded-full text-sm mb-6">
+            <span className="inline-block px-4 py-2 bg-primary/10 text-primary font-medium rounded-full text-sm mb-6">
               Senior Resident • Gastroenterology
             </span>
             
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Excellence in{" "}
-              <span className="text-gradient">Digestive</span>{" "}
-              <span className="text-gradient">&</span>{" "}
-              <span className="text-gradient">Hepatic</span>{" "}
-              Health Care
+              Dr. Harshal{" "}
+              <span className="text-gradient">Mahesh</span>{" "}
+              <span className="text-gradient">Goel</span>
             </h1>
             
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl">
@@ -37,19 +36,23 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 mb-12">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-medical-blue-dark text-primary-foreground px-8 py-6 text-lg"
-              >
-                Book Consultation
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg"
-              >
-                View Expertise
-              </Button>
+              <Link to="/book-consultation">
+                <Button 
+                  size="lg" 
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg"
+                >
+                  Book Consultation
+                </Button>
+              </Link>
+              <Link to="/expertise">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg"
+                >
+                  View Expertise
+                </Button>
+              </Link>
             </div>
 
             {/* Stats */}
