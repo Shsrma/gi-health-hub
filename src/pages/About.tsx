@@ -58,6 +58,13 @@ const About = () => {
               Compassionate Care,{" "}
               <span className="text-gradient">Advanced Medicine</span>
             </h1>
+            <div className="mb-8 flex justify-center">
+              <img
+                src="/profile.jpeg"
+                alt="Dr. Harshal Mahesh Goel - Professional Portrait"
+                className="max-w-sm rounded-lg shadow-lg"
+              />
+            </div>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Dr. Harshal Mahesh Goel is a dedicated gastroenterologist committed to advancing 
               digestive and hepatic health through expert clinical care. With extensive training 
